@@ -10,7 +10,7 @@ builder.Services.AddDbContext<MyDatabaseContext>(options =>
 builder.Services.AddStackExchangeRedisCache(options =>
 {
 options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
-options.InstanceName = "msdocs-core-sql-888-database";
+options.InstanceName = "todoappme-database";
 });
 
 // Add services to the container.
